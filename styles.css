@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bungee&family=Outfit&family=Poppins:wght@300;400;500;600;700&family=Ramabhadra&family=Roboto&family=Roboto+Condensed:wght@300&family=Sacramento&family=Secular+One&family=Staatliches&family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #9ea7eb, #4188a1);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.game-wrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: .5rem;
+}
+.game-header h1{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.players{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 1.2rem;
+}
+
+ .player-computer .material-symbols-outlined, .player-person .material-symbols-outlined{
+    font-size: 35px;
+}
+.profile{
+    color: rgb(126, 74, 74);
+    padding: 1rem;
+    border: 2px solid #9ea7eb;
+    border-radius: 50%;
+}
+.player-person h2, .player-computer h2{
+    padding-block: .5rem;
+}
+.player-person-result-display, .player-computer-result-display{
+    font-size: 20px;
+}
+.choices-display{
+    padding: .5rem;
+}
+.game-showcase{
+    padding-top: 2rem;
+    position: relative;
+    height: 45vh;
+}
+.game-playing-section{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    bottom: 0;
+    
+}
+.game-playing-section h3{
+    font-size: 26px;
+    color: #fff;
+    padding-bottom: .5rem;
+}
+.moves-left{
+    font-size: 20px;
+
+}
+.buttons{
+    display: flex;
+    gap: 1rem;
+    padding-block: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.buttons button{
+    background-color: rgb(22, 228, 22);
+    outline: none;
+    border: none;
+    padding: .6rem 2rem;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    opacity: .9;
+    box-shadow: 1px 1px 5px rgb(126, 74, 74)
+}
+.move-result{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.game-playing-section.active{
+    display: none;
+}
+.game-over-section.active{
+   display: block;
+}
+
+.game-over-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    display: none;
+}
+.game-over-section h1{
+    font-size: 30px;
+    color: #fff;
+}
+.game-result{
+    padding: 2rem;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 600;
+}
+.restart{
+    background-color: rgb(22, 228, 22);
+    outline: none;
+    border: none;
+    padding: .6rem 2rem;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.restart:hover{
+    opacity: .9;
+    box-shadow: 1px 1px 5px rgb(126, 74, 74)
+}
+@media screen and (max-width:450px) {
+    .game-wrapper{
+        width: 100%;
+    }
+    .players{
+        gap: 6rem;
+    }
+    .game-header h1{
+        font-size: 26px;
+    }
+    .players h2{
+        font-size: 22px;
+    }
+    .game-playing-section h3{
+        font-size: 22px;
+    }
+    .game-over-section h1{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width:430px) {
+    .buttons button{
+        padding-inline: 1.4rem;
+    }
+    .game-result{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:380px) {
+    .buttons button{
+        font-size: 16px;
+    } 
+    .player-computer .material-symbols-outlined, .player-person .material-symbols-outlined{
+        font-size: 28px;
+    } 
+}
+@media screen and (max-width:330px) {
+  .buttons button{
+    padding-inline: 1rem;
+  }
+}

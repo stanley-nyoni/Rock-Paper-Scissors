@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper or Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <section class="container">
+        <div class="game-wrapper">
+            <div class="game-header">
+                <h1>Rock Paper Scissors</h1>
+                <div class="players">
+                    <div class="player-person">
+                        <span class="material-symbols-outlined profile">person_filled</span>
+                         <h2>You</h2>
+                         <span class="player-person-result-display">0</span>
+                    </div>
+                    <div class="player-computer">
+                        <span class="material-symbols-outlined profile">computer</span>
+                         <h2>Computer</h2>
+                         <span class="player-computer-result-display">0</span>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="game-showcase">
+          <div class="game-playing-section">
+            <h3>Choose your move</h3>
+            <span class="moves-left">Moves Left: 10</span>
+            <div class="buttons">
+                <button class="rock" id="Rock">Rock</button>
+                <button class="paper" id="Paper">Paper</button>
+                <button class="scissors" id="Scissors">Scissors</button>
+            </div>
+            <div class="choices-display">
+                <h4 class="player-choice-display">Your Choice:</h4>
+                <h4 class="computer-choice-display">Computer Choice:</h4>
+            </div>
+            <span class="move-result">Result</span>
+          </div>
+
+            <div class="game-over-section">
+                <h1>Game Over!!</h1>
+                <div class="game-result">You won the game</div>
+                <button class="restart">Restart</button>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
